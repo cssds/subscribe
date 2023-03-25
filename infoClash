@@ -14,29 +14,29 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '快飞永久跳转地址: http://fastfly.club', type: trojan, server: gy.xueshao.top, port: 13945, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true, sni: hk01.ckcloud.info, skip-cert-verify: true }
-    - { name: 'vip1 香港-01', type: ss, server: gzdx.jcnode.top, port: 40002, cipher: aes-256-gcm, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true }
-    - { name: 'vip1 香港-02', type: ss, server: gzyd.jcnode.top, port: 40002, cipher: aes-256-gcm, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true }
-    - { name: 'vip1 香港-05', type: ss, server: gzdx.jcnode.top, port: 40003, cipher: aes-256-gcm, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true }
-    - { name: 'vip1 香港-06', type: ss, server: gzyd.jcnode.top, port: 40003, cipher: aes-256-gcm, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true }
-    - { name: 'vip1 香港-09', type: trojan, server: gzdx.jcnode.top, port: 40001, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true, sni: hk02.ckcloud.info, skip-cert-verify: true }
-    - { name: 'vip1 香港-10', type: trojan, server: gzyd.jcnode.top, port: 40001, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true, sni: hk02.ckcloud.info, skip-cert-verify: true }
-    - { name: 'vip3 香港-12', type: trojan, server: gzyd02.jcnode.top, port: 40001, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true, sni: hk02.ckcloud.info, skip-cert-verify: true }
-    - { name: 'vip1 日本-01', type: ss, server: gzdx.jcnode.top, port: 41002, cipher: aes-256-gcm, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true }
-    - { name: 'vip2 日本-02', type: ss, server: gzyd.jcnode.top, port: 41002, cipher: aes-256-gcm, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true }
-    - { name: 'vip1 日本-04', type: ss, server: gzdx.jcnode.top, port: 41000, cipher: aes-256-gcm, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true }
-    - { name: 'vip1 日本-10', type: trojan, server: gzdx.jcnode.top, port: 41003, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true, sni: jp01.ckcloud.info, skip-cert-verify: true }
-    - { name: 'vip1 台湾-01', type: vmess, server: gzdx.jcnode.top, port: 42000, uuid: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
-    - { name: 'vip1 台湾-03', type: vmess, server: gzyd02.jcnode.top, port: 42000, uuid: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
-    - { name: 'vip1 新加坡-01', type: vmess, server: gzyd.jcnode.top, port: 43000, uuid: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
-    - { name: 'vip1 新加坡-02', type: vmess, server: gzdx.jcnode.top, port: 43000, uuid: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
-    - { name: 'vip1 新加坡-04', type: trojan, server: gzyd.jcnode.top, port: 43002, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true, sni: sg01.ckcloud.info, skip-cert-verify: true }
-    - { name: 'vip1 新加坡-05', type: trojan, server: gzdx.jcnode.top, port: 43002, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true, sni: sg01.ckcloud.info, skip-cert-verify: true }
-    - { name: 'vip1 美国-04', type: trojan, server: gzdx.jcnode.top, port: 48000, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true, sni: us2.ckcloud.info, skip-cert-verify: true }
-    - { name: 'vip1 美国-05', type: vmess, server: gzdx.jcnode.top, port: 48002, uuid: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
-    - { name: 'vip1 英国-03', type: trojan, server: hbcu.lele233.top, port: 29733, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true, sni: uk01.ckcloud.info, skip-cert-verify: true }
-    - { name: 'vip1 英国-04', type: trojan, server: nmcm.lele233.top, port: 57299, password: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, udp: true, sni: uk01.ckcloud.info, skip-cert-verify: true }
-    - { name: 'vip1 印度-03', type: vmess, server: gzdx.jcnode.top, port: 49000, uuid: 17fc49e5-6d9d-4e70-9c82-fbbc18e0a8eb, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
+    - { name: '快飞永久跳转地址: http://fastfly.club', type: trojan, server: gy.xueshao.top, port: 13945, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true, sni: hk01.ckcloud.info, skip-cert-verify: true }
+    - { name: 'vip1 香港-01', type: ss, server: gzdx.jcnode.top, port: 40002, cipher: aes-256-gcm, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true }
+    - { name: 'vip1 香港-02', type: ss, server: gzyd.jcnode.top, port: 40002, cipher: aes-256-gcm, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true }
+    - { name: 'vip1 香港-05', type: ss, server: gzdx.jcnode.top, port: 40003, cipher: aes-256-gcm, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true }
+    - { name: 'vip1 香港-06', type: ss, server: gzyd.jcnode.top, port: 40003, cipher: aes-256-gcm, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true }
+    - { name: 'vip1 香港-09', type: trojan, server: gzdx.jcnode.top, port: 40001, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true, sni: hk02.ckcloud.info, skip-cert-verify: true }
+    - { name: 'vip1 香港-10', type: trojan, server: gzyd.jcnode.top, port: 40001, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true, sni: hk02.ckcloud.info, skip-cert-verify: true }
+    - { name: 'vip3 香港-12', type: trojan, server: gzyd02.jcnode.top, port: 40001, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true, sni: hk02.ckcloud.info, skip-cert-verify: true }
+    - { name: 'vip1 日本-01', type: ss, server: gzdx.jcnode.top, port: 41002, cipher: aes-256-gcm, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true }
+    - { name: 'vip2 日本-02', type: ss, server: gzyd.jcnode.top, port: 41002, cipher: aes-256-gcm, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true }
+    - { name: 'vip1 日本-04', type: ss, server: gzdx.jcnode.top, port: 41000, cipher: aes-256-gcm, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true }
+    - { name: 'vip1 日本-10', type: trojan, server: gzdx.jcnode.top, port: 41003, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true, sni: jp01.ckcloud.info, skip-cert-verify: true }
+    - { name: 'vip1 台湾-01', type: vmess, server: gzdx.jcnode.top, port: 42000, uuid: ee45b504-5210-4dad-b64f-9d03bf52cb1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
+    - { name: 'vip1 台湾-03', type: vmess, server: gzyd02.jcnode.top, port: 42000, uuid: ee45b504-5210-4dad-b64f-9d03bf52cb1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
+    - { name: 'vip1 新加坡-01', type: vmess, server: gzyd.jcnode.top, port: 43000, uuid: ee45b504-5210-4dad-b64f-9d03bf52cb1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
+    - { name: 'vip1 新加坡-02', type: vmess, server: gzdx.jcnode.top, port: 43000, uuid: ee45b504-5210-4dad-b64f-9d03bf52cb1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
+    - { name: 'vip1 新加坡-04', type: trojan, server: gzyd.jcnode.top, port: 43002, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true, sni: sg01.ckcloud.info, skip-cert-verify: true }
+    - { name: 'vip1 新加坡-05', type: trojan, server: gzdx.jcnode.top, port: 43002, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true, sni: sg01.ckcloud.info, skip-cert-verify: true }
+    - { name: 'vip1 美国-04', type: trojan, server: gzdx.jcnode.top, port: 48000, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true, sni: us2.ckcloud.info, skip-cert-verify: true }
+    - { name: 'vip1 美国-05', type: vmess, server: gzdx.jcnode.top, port: 48002, uuid: ee45b504-5210-4dad-b64f-9d03bf52cb1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
+    - { name: 'vip1 英国-03', type: trojan, server: hbcu.lele233.top, port: 29733, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true, sni: uk01.ckcloud.info, skip-cert-verify: true }
+    - { name: 'vip1 英国-04', type: trojan, server: nmcm.lele233.top, port: 57299, password: ee45b504-5210-4dad-b64f-9d03bf52cb1f, udp: true, sni: uk01.ckcloud.info, skip-cert-verify: true }
+    - { name: 'vip1 印度-03', type: vmess, server: gzdx.jcnode.top, port: 49000, uuid: ee45b504-5210-4dad-b64f-9d03bf52cb1f, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /fly }, ws-path: /fly }
 proxy-groups:
     - { name: FastFly, type: select, proxies: [自动选择, 故障转移, '快飞永久跳转地址: http://fastfly.club', 'vip1 香港-01', 'vip1 香港-02', 'vip1 香港-05', 'vip1 香港-06', 'vip1 香港-09', 'vip1 香港-10', 'vip3 香港-12', 'vip1 日本-01', 'vip2 日本-02', 'vip1 日本-04', 'vip1 日本-10', 'vip1 台湾-01', 'vip1 台湾-03', 'vip1 新加坡-01', 'vip1 新加坡-02', 'vip1 新加坡-04', 'vip1 新加坡-05', 'vip1 美国-04', 'vip1 美国-05', 'vip1 英国-03', 'vip1 英国-04', 'vip1 印度-03'] }
     - { name: 自动选择, type: url-test, proxies: ['快飞永久跳转地址: http://fastfly.club', 'vip1 香港-01', 'vip1 香港-02', 'vip1 香港-05', 'vip1 香港-06', 'vip1 香港-09', 'vip1 香港-10', 'vip3 香港-12', 'vip1 日本-01', 'vip2 日本-02', 'vip1 日本-04', 'vip1 日本-10', 'vip1 台湾-01', 'vip1 台湾-03', 'vip1 新加坡-01', 'vip1 新加坡-02', 'vip1 新加坡-04', 'vip1 新加坡-05', 'vip1 美国-04', 'vip1 美国-05', 'vip1 英国-03', 'vip1 英国-04', 'vip1 印度-03'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
