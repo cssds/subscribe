@@ -14,35 +14,35 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：1 GB', type: vmess, server: gzyd.jcnode.top, port: 23002, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: '距离下次重置剩余：27 天', type: vmess, server: gzyd.jcnode.top, port: 23002, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 套餐到期：2023-04-04, type: vmess, server: gzyd.jcnode.top, port: 23002, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB永久跳转地址 jcbb.cc', type: vmess, server: gzyd.jcnode.top, port: 23002, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: JCBB_香港01【vip1, type: vmess, server: gzyd.jcnode.top, port: 20000, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: JCBB_香港02【vip1】, type: vmess, server: gzdx.jcnode.top, port: 20001, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: JCBB_香港03【vip1】, type: vmess, server: gzyd.jcnode.top, port: 20001, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: JCBB_香港04【vip1, type: vmess, server: gzdx.jcnode.top, port: 20000, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB_香港 05【vip1】', type: trojan, server: gzyd.jcnode.top, port: 20002, password: 551f1871-adb2-4ade-a277-274c8c4d2467, udp: true, sni: hk01.ckcloud.info, skip-cert-verify: true }
-    - { name: 'JCBB_香港 06【vip1】', type: trojan, server: gzyd.jcnode.top, port: 20003, password: 551f1871-adb2-4ade-a277-274c8c4d2467, udp: true, sni: hk02.ckcloud.info, skip-cert-verify: true }
-    - { name: JCBB_德国01【vip1】, type: ss, server: hbcu.lele233.top, port: 16157, cipher: aes-256-gcm, password: 551f1871-adb2-4ade-a277-274c8c4d2467, udp: true }
-    - { name: JCBB_德国02【vip1】, type: ss, server: gzyd.jcnode.top, port: 27000, cipher: aes-256-gcm, password: 551f1871-adb2-4ade-a277-274c8c4d2467, udp: true }
-    - { name: 'JCBB_ 英国01【vip1】', type: trojan, server: gzyd.jcnode.top, port: 26000, password: 551f1871-adb2-4ade-a277-274c8c4d2467, udp: true, sni: uk01.ckcloud.info, skip-cert-verify: true }
-    - { name: 'JCBB_ 英国02【vip1】', type: trojan, server: gxct.lele233.top, port: 24389, password: 551f1871-adb2-4ade-a277-274c8c4d2467, udp: true, sni: uk01.ckcloud.info, skip-cert-verify: true }
-    - { name: JCBB_日本01【vip1】, type: ss, server: gzyd.jcnode.top, port: 21001, cipher: aes-256-gcm, password: 551f1871-adb2-4ade-a277-274c8c4d2467, udp: true }
-    - { name: JCBB_日本02【vip1】, type: trojan, server: gzyd.jcnode.top, port: 21002, password: 551f1871-adb2-4ade-a277-274c8c4d2467, udp: true, sni: jp02.ckcloud.info, skip-cert-verify: true }
-    - { name: JCBB_日本04【vip1】, type: trojan, server: gzyd.jcnode.top, port: 21002, password: 551f1871-adb2-4ade-a277-274c8c4d2467, udp: true, sni: jp02.ckcloud.info, skip-cert-verify: true }
-    - { name: JCBB_印度01【vip1】, type: vmess, server: gzyd.jcnode.top, port: 25000, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: JCBB_印度02【vip1】, type: vmess, server: gzdx.jcnode.top, port: 25000, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: JCBB_印度03【vip1】, type: vmess, server: gzdx.jcnode.top, port: 65000, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB_ 新加坡 01【vip1】', type: vmess, server: gzdx.jcnode.top, port: 63000, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB_ 新加坡 02【vip1】', type: vmess, server: gzdx.jcnode.top, port: 23001, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB_ 新加坡 03【vip1】', type: vmess, server: gzyd.jcnode.top, port: 23002, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB_ 美国 01【vip1】', type: vmess, server: gzyd.jcnode.top, port: 28001, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB_ 美国03【vip2】', type: vmess, server: gzdx.jcnode.top, port: 28000, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB_ 美国03【vip1】', type: vmess, server: hbcu.lele233.top, port: 44390, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB_ 美国04【vip1】', type: vmess, server: gzyd.jcnode.top, port: 28000, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB_ 台湾 01【vip1】', type: vmess, server: gzyd.jcnode.top, port: 24000, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
-    - { name: 'JCBB_ 台湾 02【vip1】', type: vmess, server: gzyd.jcnode.top, port: 24001, uuid: 551f1871-adb2-4ade-a277-274c8c4d2467, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: '剩余流量：1 GB', type: vmess, server: gzyd.jcnode.top, port: 23002, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: '距离下次重置剩余：27 天', type: vmess, server: gzyd.jcnode.top, port: 23002, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 套餐到期：2023-04-04, type: vmess, server: gzyd.jcnode.top, port: 23002, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB永久跳转地址 jcbb.cc', type: vmess, server: gzyd.jcnode.top, port: 23002, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: JCBB_香港01【vip1, type: vmess, server: gzyd.jcnode.top, port: 20000, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: JCBB_香港02【vip1】, type: vmess, server: gzdx.jcnode.top, port: 20001, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: JCBB_香港03【vip1】, type: vmess, server: gzyd.jcnode.top, port: 20001, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: JCBB_香港04【vip1, type: vmess, server: gzdx.jcnode.top, port: 20000, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB_香港 05【vip1】', type: trojan, server: gzyd.jcnode.top, port: 20002, password: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, udp: true, sni: hk01.ckcloud.info, skip-cert-verify: true }
+    - { name: 'JCBB_香港 06【vip1】', type: trojan, server: gzyd.jcnode.top, port: 20003, password: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, udp: true, sni: hk02.ckcloud.info, skip-cert-verify: true }
+    - { name: JCBB_德国01【vip1】, type: ss, server: hbcu.lele233.top, port: 16157, cipher: aes-256-gcm, password: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, udp: true }
+    - { name: JCBB_德国02【vip1】, type: ss, server: gzyd.jcnode.top, port: 27000, cipher: aes-256-gcm, password: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, udp: true }
+    - { name: 'JCBB_ 英国01【vip1】', type: trojan, server: gzyd.jcnode.top, port: 26000, password: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, udp: true, sni: uk01.ckcloud.info, skip-cert-verify: true }
+    - { name: 'JCBB_ 英国02【vip1】', type: trojan, server: gxct.lele233.top, port: 24389, password: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, udp: true, sni: uk01.ckcloud.info, skip-cert-verify: true }
+    - { name: JCBB_日本01【vip1】, type: ss, server: gzyd.jcnode.top, port: 21001, cipher: aes-256-gcm, password: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, udp: true }
+    - { name: JCBB_日本02【vip1】, type: trojan, server: gzyd.jcnode.top, port: 21002, password: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, udp: true, sni: jp02.ckcloud.info, skip-cert-verify: true }
+    - { name: JCBB_日本04【vip1】, type: trojan, server: gzyd.jcnode.top, port: 21002, password: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, udp: true, sni: jp02.ckcloud.info, skip-cert-verify: true }
+    - { name: JCBB_印度01【vip1】, type: vmess, server: gzyd.jcnode.top, port: 25000, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: JCBB_印度02【vip1】, type: vmess, server: gzdx.jcnode.top, port: 25000, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: JCBB_印度03【vip1】, type: vmess, server: gzdx.jcnode.top, port: 65000, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB_ 新加坡 01【vip1】', type: vmess, server: gzdx.jcnode.top, port: 63000, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB_ 新加坡 02【vip1】', type: vmess, server: gzdx.jcnode.top, port: 23001, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB_ 新加坡 03【vip1】', type: vmess, server: gzyd.jcnode.top, port: 23002, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB_ 美国 01【vip1】', type: vmess, server: gzyd.jcnode.top, port: 28001, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB_ 美国03【vip2】', type: vmess, server: gzdx.jcnode.top, port: 28000, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB_ 美国03【vip1】', type: vmess, server: hbcu.lele233.top, port: 44390, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB_ 美国04【vip1】', type: vmess, server: gzyd.jcnode.top, port: 28000, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB_ 台湾 01【vip1】', type: vmess, server: gzyd.jcnode.top, port: 24000, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
+    - { name: 'JCBB_ 台湾 02【vip1】', type: vmess, server: gzyd.jcnode.top, port: 24001, uuid: 0f8afc9f-d8b6-4ccb-b939-27d868ad0d3b, alterId: 0, cipher: auto, udp: true, network: ws }
 proxy-groups:
     - { name: JCBB, type: select, proxies: [自动选择, 故障转移, '剩余流量：1 GB', '距离下次重置剩余：27 天', 套餐到期：2023-04-04, 'JCBB永久跳转地址 jcbb.cc', JCBB_香港01【vip1, JCBB_香港02【vip1】, JCBB_香港03【vip1】, JCBB_香港04【vip1, 'JCBB_香港 05【vip1】', 'JCBB_香港 06【vip1】', JCBB_德国01【vip1】, JCBB_德国02【vip1】, 'JCBB_ 英国01【vip1】', 'JCBB_ 英国02【vip1】', JCBB_日本01【vip1】, JCBB_日本02【vip1】, JCBB_日本04【vip1】, JCBB_印度01【vip1】, JCBB_印度02【vip1】, JCBB_印度03【vip1】, 'JCBB_ 新加坡 01【vip1】', 'JCBB_ 新加坡 02【vip1】', 'JCBB_ 新加坡 03【vip1】', 'JCBB_ 美国 01【vip1】', 'JCBB_ 美国03【vip2】', 'JCBB_ 美国03【vip1】', 'JCBB_ 美国04【vip1】', 'JCBB_ 台湾 01【vip1】', 'JCBB_ 台湾 02【vip1】'] }
     - { name: 自动选择, type: url-test, proxies: ['剩余流量：1 GB', '距离下次重置剩余：27 天', 套餐到期：2023-04-04, 'JCBB永久跳转地址 jcbb.cc', JCBB_香港01【vip1, JCBB_香港02【vip1】, JCBB_香港03【vip1】, JCBB_香港04【vip1, 'JCBB_香港 05【vip1】', 'JCBB_香港 06【vip1】', JCBB_德国01【vip1】, JCBB_德国02【vip1】, 'JCBB_ 英国01【vip1】', 'JCBB_ 英国02【vip1】', JCBB_日本01【vip1】, JCBB_日本02【vip1】, JCBB_日本04【vip1】, JCBB_印度01【vip1】, JCBB_印度02【vip1】, JCBB_印度03【vip1】, 'JCBB_ 新加坡 01【vip1】', 'JCBB_ 新加坡 02【vip1】', 'JCBB_ 新加坡 03【vip1】', 'JCBB_ 美国 01【vip1】', 'JCBB_ 美国03【vip2】', 'JCBB_ 美国03【vip1】', 'JCBB_ 美国04【vip1】', 'JCBB_ 台湾 01【vip1】', 'JCBB_ 台湾 02【vip1】'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
